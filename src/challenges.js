@@ -17,11 +17,9 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(array) {
   const lastPosition = array.length - 1;
-  const concat = array[lastPosition] + ', ' + array[0];
+  const concat = `${array[lastPosition]}, ${array[0]}`;
   return concat;
 }
-
-console.log(concatName(['joao', 'lucas', 'pedro', 'karla']));
 
 // Desafio 5
 function footballPoints() {
