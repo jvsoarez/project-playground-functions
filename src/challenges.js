@@ -10,14 +10,18 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  return string.split(' ');
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  const lastPosition = array.length - 1;
+  const concat = array[lastPosition] + ', ' + array[0];
+  return concat;
 }
+
+console.log(concatName(['joao', 'lucas', 'pedro', 'karla']));
 
 // Desafio 5
 function footballPoints() {
