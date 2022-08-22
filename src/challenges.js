@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 // Desafio 1
 function compareTrue(value1, value2) {
   return value1 && value2;
@@ -76,14 +77,53 @@ function fizzBuzz(array) {
   return array;
 }
 
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
-
 // Desafio 9
-function encode() {
-  // seu código aqui
+// eslint-disable-next-line complexity, max-lines-per-function
+function encode(string) {
+  string = string.split('');
+  for (let i = 0; i < string.length; i += 1) {
+    if (string[i] === 'a') {
+      string[i] = '1';
+    }
+    if (string[i] === 'e') {
+      string[i] = '2';
+    }
+    if (string[i] === 'i') {
+      string[i] = '3';
+    }
+    if (string[i] === 'o') {
+      string[i] = '4';
+    }
+    if (string[i] === 'u') {
+      string[i] = '5';
+    }
+  }
+  string = string.join('');
+  return string;
 }
-function decode() {
-  // seu código aqui
+
+// eslint-disable-next-line complexity
+function decode(string) {
+  string = string.split('');
+  for (let i = 0; i < string.length; i += 1) {
+    if (string[i] === '1') {
+      string[i] = 'a';
+    }
+    if (string[i] === '2') {
+      string[i] = 'e';
+    }
+    if (string[i] === '3') {
+      string[i] = 'i';
+    }
+    if (string[i] === '4') {
+      string[i] = 'o';
+    }
+    if (string[i] === '5') {
+      string[i] = 'u';
+    }
+  }
+  string = string.join('');
+  return string;
 }
 
 module.exports = {
