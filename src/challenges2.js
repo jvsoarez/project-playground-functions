@@ -27,8 +27,16 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let countGlassesOfWater = 0;
+  const regex = /\d+/g;
+  const separateNumbersFromString = string.match(regex);
+  for (let i = 0; i < separateNumbersFromString.length; i += 1) {
+    const amountOfEachDrink = parseInt(separateNumbersFromString[i]);
+    countGlassesOfWater += amountOfEachDrink;
+  }
+  if (countGlassesOfWater === 1) return countGlassesOfWater + ' copo de água'
+  return countGlassesOfWater + ' copos de água';
 }
 
 module.exports = {
