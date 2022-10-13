@@ -1,6 +1,6 @@
 # Project Playground Functions
 
-### block-04 project: Introduction to JavaScript
+### Block 04 project: Introduction to JavaScript
 
 👋 Hello, guys!
 This is the first project in the Trybe course that uses JavaScript.
