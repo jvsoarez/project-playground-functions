@@ -1,4 +1,4 @@
-# project-playground-functions
+# Project Playground Functions
 
 ### bloc-04 project: Introduction to JavaScript
 
